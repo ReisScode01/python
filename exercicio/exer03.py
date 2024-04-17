@@ -1,6 +1,4 @@
-nota1 = float(input("A nota do primeiro trimestre"))
-nota2 = float(input("A nota do segundo trimestre"))
-nota3 = float(input("A nota do terceiro trimestre"))
-nota4 = float(input("A nota do quarto trimestre"))
-media = (nota1+nota2+nota3+nota4)/4
-print("a média é:",media) 
+altura = int(input('Digite a altura do triãngulo: '))
+base = int(input('Digite a base do triãngulo: '))
+area = (base * altura)/2
+print('A área do triãngulo é:', area)
