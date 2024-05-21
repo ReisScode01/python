@@ -1,0 +1,19 @@
+from PIL import Image 
+
+Imagem = Image.open('images.jpeg')
+
+largura, altura = Imagem.size
+
+print(largura)
+print(altura)
+
+for x in range(largura):
+  for y in range(altura):
+    pixel=Imagem.getpixel((x,y))
+    print(pixel)
+    novo_pixel = tuple (255-valor for valor in pixel)
+    Imagem.putpixel((x,y), novo_pixel)
+
+Imagem.save('images_negativo.jpeg')
+
+  
